@@ -38,12 +38,12 @@ Please check the [notebook](https://github.com/karlTUM/udacity_traffic_light_det
 
 For training the simulation dataset, I train around 20000 iterations. Below is the Average Precision on the validation dataset during training.
 
-![alt text](sim_eval_ssd_mobileV2.png)
+![alt text](./pic/sim_eval_ssd_mobileV2.png)
 *AP under different levels of IoU on the validation dataset during training*
 
-![alt text](./simu_example1.png)
-![alt text](./simu_example2.png)
-![alt text](./simu_example3.png)
+![alt text](./pic/simu_example1.png)
+![alt text](./pic/simu_example2.png)
+![alt text](./pic/simu_example3.png)
 
 *Detection results on simulated dataset*
 
@@ -58,14 +58,14 @@ The training codes on Google Colab can be found in notebook.
 
 Below are the results:
 
-![alt text](./real_example1.png)
-![alt text](./real_example2.png)
-![alt text](./real_example3.png)
-![alt text](./real_example4.png)
-![alt text](./real_example5.png)
-![alt text](./real_example6.png)
-![alt text](./real_example7.png)
-![alt text](./real_example8.png)
+![alt text](./pic/real_example1.png)
+![alt text](./pic/real_example2.png)
+![alt text](./pic/real_example3.png)
+![alt text](./pic/real_example4.png)
+![alt text](./pic/real_example5.png)
+![alt text](./pic/real_example6.png)
+![alt text](./pic/real_example7.png)
+![alt text](./pic/real_example8.png)
 
 
 
