@@ -43,7 +43,30 @@ For training the simulation dataset, I train around 20000 iterations. Below is t
 
 ![alt text](./simu_example1.png)
 ![alt text](./simu_example2.png)
+![alt text](./simu_example3.png)
+
 *Detection results on simulated dataset*
+
+---
+## Real dataset
+
+### SSD-InceptionV2
+
+For real dataset, the image size is about 1306x1000, but the object area is very small around 20x50. In that case, I first try to increase the network detection power and  utilize SSD-InceptionV2 model based on resized 512x512 images. 
+
+Below are the results:
+
+![alt text](./real_example1.png)
+![alt text](./real_example2.png)
+![alt text](./real_example3.png)
+![alt text](./real_example4.png)
+![alt text](./real_example5.png)
+![alt text](./real_example6.png)
+![alt text](./real_example7.png)
+![alt text](./real_example8.png)
+
+
+
 
 
 
