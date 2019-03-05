@@ -54,6 +54,8 @@ For training the simulation dataset, I train around 20000 iterations. Below is t
 
 For real dataset, the image size is about 1306x1000, but the object area is very small around 20x50. In that case, I first try to increase the network detection power and  utilize SSD-InceptionV2 model based on resized 512x512 images. 
 
+The training codes on Google Colab can be found in notebook.
+
 Below are the results:
 
 ![alt text](./real_example1.png)
