@@ -3,7 +3,7 @@
 ---
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
-This repo is part of Udacity final project. I utilize Tensorflow Object Detection API based on SSD-MobileNetV2 architecture for traffic light detection. Note that SSD-MobileNetV2 cannot be compatible with old version tensorflow, I use Tensorflow 1.13 for training.
+This repo is part of Udacity final project. I utilize Tensorflow Object Detection API based on SSD-MobileNetV2/SSD-InceptionV2 architecture for traffic light detection. Note that SSD-MobileNetV2 cannot be compatible with old version tensorflow, I use Tensorflow 1.13 for training.
 
 ## Training dataset 
 
@@ -67,7 +67,9 @@ Below are the results:
 ![alt text](./pic/real_example7.png)
 ![alt text](./pic/real_example8.png)
 
+### SSD-MobileNetV2
 
+The results of light-weight SSD-MobileNetV2 on real dataset is in the [notebook](https://github.com/karlTUM/udacity_traffic_light_detection/blob/master/google_colab_work/work/reference_ssd_mobilenetV2_real_data.ipynb). 
 
 
 
