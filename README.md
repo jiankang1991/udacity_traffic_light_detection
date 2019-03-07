@@ -76,7 +76,7 @@ The results of light-weight SSD-MobileNetV2 on real dataset is in the [notebook]
 
 ## training dataset
 
-I would try to try one reference model for the traffic light detection in both simulation and real cases and I found the [dataset](https://github.com/Az4z3l/CarND-Traffic-Light-Detection). 
+I would try to use one reference model for the traffic light detection in both simulation and real cases and I found the [dataset](https://github.com/Az4z3l/CarND-Traffic-Light-Detection). 
 
 Based on the SSD-MobileNetV2 model, I modify the configure file with:
 
@@ -109,7 +109,9 @@ post_processing {
       score_converter: SIGMOID
     }
 ```
-For converting the trained model on Tensorflow V1.13 to older version, I follow the detailed [introduction](https://github.com/Az4z3l/CarND-Traffic-Light-Detection). 
+For converting the trained model on Tensorflow V1.13 to older version (Tensorflow V1.3.0), I follow the detailed [introduction](https://github.com/Az4z3l/CarND-Traffic-Light-Detection). 
+
+The trainig and evalutaion details can be found in the [notebook](https://github.com/karlTUM/udacity_traffic_light_detection/blob/master/colab_work_new/train_ssd_mobilenetV2_traffic_dataset_mixed.ipynb).
 
 ## results
 
