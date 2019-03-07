@@ -71,6 +71,57 @@ Below are the results:
 
 The results of light-weight SSD-MobileNetV2 on real dataset is in the [notebook](https://github.com/karlTUM/udacity_traffic_light_detection/blob/master/google_colab_work/work/reference_ssd_mobilenetV2_real_data.ipynb). 
 
+---
+# update
+
+## training dataset
+
+I would try to try one reference model for the traffic light detection in both simulation and real cases and I found the [dataset](https://github.com/Az4z3l/CarND-Traffic-Light-Detection). 
+
+Based on the SSD-MobileNetV2 model, I modify the configure file with:
+
+```
+num_classes: 3
+
+image_resizer {
+      fixed_shape_resizer {
+        height: 512
+        width: 512
+      }
+    }
+
+anchor_generator {
+      ssd_anchor_generator {
+        num_layers: 6
+        min_scale: 0.2
+        max_scale: 0.95
+        aspect_ratios: 0.3333
+      }
+    }
+
+post_processing {
+      batch_non_max_suppression {
+        score_threshold: 1e-8
+        iou_threshold: 0.6
+        max_detections_per_class: 10
+        max_total_detections: 10
+      }
+      score_converter: SIGMOID
+    }
+```
+For converting the trained model on Tensorflow V1.13 to older version, I follow the detailed [introduction](https://github.com/Az4z3l/CarND-Traffic-Light-Detection). 
+
+## results
+
+
+Simulation              | Real case 
+:-------------------------:|:-------------------------:
+![alt text](./pic/simu_example_mixed_model_1.png)  | ![alt text](./pic/real_example_mixed_model_1.png) 
+![alt text](./pic/simu_example_mixed_model_3.png) | ![alt text](./pic/real_example_mixed_model_3.png)
+![alt text](./pic/simu_example_mixed_model_2.png) | ![alt text](./pic/real_example_mixed_model_7.png)
+
+
+
 
 
 
